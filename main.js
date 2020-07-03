@@ -35,7 +35,7 @@ printKata('Kata 0', greenEye)
 const activeUsers = users.filter(item => item.isActive === true).map(item => item.name)
 printKata('Kata 1', activeUsers)
 
-const userEmails = users.map(item => item.email)
+const userEmails = users.map(item => item.email).join(', ').split(',')
 printKata('Kata 2', userEmails)
 
 
